@@ -7,9 +7,8 @@
 // Сохраняй время воспроизведения в локальное хранилище. Пусть ключом для хранилища будет строка "videoplayer-current-time".
 // При перезагрузке страницы воспользуйся методом setCurrentTime() для того чтобы возобновить воспроизведение с сохраненной позиции.
 // Добавь в проект бибилотеку lodash.throttle и сделай так, чтобы время воспроизведения обновлялось в хранилище не чаще чем раз в секунду.
-let playerVimeo = require("@vimeo/player");
-let vimeoPlayer = require("vimeo");
-var throttle = require('lodash.throttle');
+import '../css/common.css';
+import { throttle } from 'lodash';
 
 
     const iframe = document.querySelector('iframe');

@@ -14,7 +14,7 @@ function onFormSubmit(evt) {
   evt.preventDefault();
   evt.currentTarget.reset();
   const objinfo = localStorage.getItem("feedback-form-state");
-  console.log (objinfo)
+  console.log (JSON.parse(objinfo))
   localStorage.removeItem("feedback-form-state")
   
 }
